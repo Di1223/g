@@ -1,0 +1,45 @@
+/* Стили для места сидения */
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #999;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Стили для окна */
+.window {
+    background-color: #aee1f5;
+}
+
+/* Стили для прохода */
+.aisle {
+    background-color: #f5f5f5;
+}
+
+/* Стили для разделения классов мест */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Стили для класса ряда мест */
+.row {
+    margin-bottom: 10px;
+}
+
+/* Стили для выделения места с выходом */
+.exit {
+    background-color: #ff6666;
+    color: white;
+}
+
+/* Стили для выделения места бизнес-класса */
+.business-class {
+    background-color: #ffd700;
+}

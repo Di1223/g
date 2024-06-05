@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Стр рез п.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Результаты поиска рейсов</h2>
+    <table>
+        <tr>
+            <th>Номер рейса</th>
+            <th>Воздушное судно</th>
+            <th>Дата вылета</th>
+            <th>Время вылета</th>
+            <th>Время прилета</th>
+            <th>Время в пути</th>
+            <th>Стоимость</th>
+            <th>Вероятность вылета</th>
+            <th>Выбрать рейс</th>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Boeing 737</td>
+            <td>01.01.2023</td>
+            <td>08:00</td>
+            <td>14:00</td>
+            <td>6 часов</td>
+            <td>$500</td>
+            <td><div class="probability-bar" style="width: 100%"></div></td>
+            <td><input type="radio" name="outbound-flight" value="123"></td>
+        </tr>
+        <!-- Добавьте другие строки для других найденных рейсов -->
+    </table>
+
+    <h2>Выбор обратного рейса</h2>
+    <table>
+        <!-- Аналогичная таблица для обратных рейсов -->
+    </table>
+
+    <!-- Кнопка для перехода к бронированию -->
+    <button id="proceed-to-booking-btn">Перейти к бронированию</button>
+
+    <script>
+        // JavaScript-код для визуального отображения вероятности вылета
+        const probabilityBars = document.querySelectorAll('.probability-bar');
+        probabilityBars.forEach(bar => {
+            const probability = parseFloat(bar.style.width);
+            if (probability < 25) {
+                bar.style.backgroundColor = 'red';
+            } else if (probability < 50) {
+                bar.style.backgroundColor = 'orange';
+            } else if (probability < 75) {
+                bar.style.backgroundColor = 'yellow';
+            } else {
+                bar.style.backgroundColor = 'green';
+            }
+        });
+    </script>
+</body>
+</html>

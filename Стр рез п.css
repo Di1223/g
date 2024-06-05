@@ -1,0 +1,43 @@
+/* Стили для заголовков */
+h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    font-size: 20px;
+}
+
+/* Стили для кнопок */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для блоков с текстом */
+.text-block {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для изображений */
+.image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

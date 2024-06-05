@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Стр упр брони.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>Информация о бронировании</h2>
+    <p>Код бронирования: ABC123</p>
+    <p>Стоимость бронирования: $1000</p>
+
+    <h2>Информация о перелете</h2>
+    <table>
+        <tr>
+            <th>Номер рейса</th>
+            <th>Воздушное судно</th>
+            <th>Город вылета</th>
+            <th>Аэропорт вылета</th>
+            <th>Дата вылета</th>
+            <th>Время вылета</th>
+            <th>Город назначения</th>
+            <th>Аэропорт назначения</th>
+            <th>Время прибытия</th>
+            <th>Время в пути</th>
+            <th>Вероятность вылета</th>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Boeing 737</td>
+            <td>New York</td>
+            <td>JFK</td>
+            <td>01.01.2023</td>
+            <td>08:00</td>
+            <td>London</td>
+            <td>LHR</td>
+            <td>14:00</td>
+            <td>6 часов</td>
+            <td><div class="probability-bar" style="width: 100%"></div></td>
+        </tr>
+        <!-- Добавьте другие строки для других рейсов -->
+    </table>
+
+    <h2>Информация о пассажирах</h2>
+    <table>
+        <tr>
+            <th>Имя</th>
+            <th>Фамилия</th>
+            <th>Дата рождения</th>
+            <th>Номер документа</th>
+            <th>Место туда</th>
+            <th>Место обратно</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>01.01.1990</td>
+            <td>ABC123456</td>
+            <td>12A</td>
+            <td>23B</td>
+        </tr>
+        <!-- Добавьте другие строки для других пассажиров -->
+    </table>
+
+    <!-- Кнопка для выбора места -->
+    <button id="choose-seat-btn">Выбрать место</button>
+
+    <!-- Дополнительные элементы и скрипты могут быть добавлены по необходимости -->
+
+    <script src="script.js"></script>
+</body>
+</html>
